@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "platforms": ["ios", "android"],
+        "name": "VivaLibro",
+        "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#704214"
+    },
+       "assetBundlePatterns": ["assets/*"],
+    "version": "0.0.2",
+    "plugins": [
+      [ "expo-build-properties", {
+        "ios": {
+    "infoPlist": {
+      "NSAppTransportSecurity": { 
+        "NSAllowsArbitraryLoads": true 
+      }
+    }
+},
+"android": {
+    "usesCleartextTraffic": true
+}        }],
+       [ "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ]
+  }
+}

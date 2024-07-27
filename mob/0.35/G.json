@@ -1,0 +1,8 @@
+{
+  "book_status": {
+    "0": "lost",
+    "1": "not owned",
+    "2": "desired to buy",
+    "3": "owned on shelve"
+  }
+}

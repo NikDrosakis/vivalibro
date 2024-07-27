@@ -1,0 +1,27 @@
+{
+  "config": {
+    "publicip": "62.38.140.132",
+    "localip": "192.168.2.3",
+    "redis_port": "6379",
+    "redis_pass": "n130177!",
+    "suser": "dros",
+    "memcached_port": "11211"
+  },
+  "domains": {
+  "vivalibro.gr": {
+    "type": "main",
+    "dbs": {
+      "maria": {
+        "dbhost": "127.0.0.1",
+        "dbname": "gs_paraperagr",
+        "dbuser": "root",
+        "dbpass": "n130177!"
+      },
+      "redis": "1",
+      "errorlog": "/var/www/vivalibro.gr/error.log",
+      "accesslog": "/var/www/vivalibro.gr/access.log",
+      "uploads": "https://vivalibro.gr/media/"
+    }
+	}
+  }
+}
